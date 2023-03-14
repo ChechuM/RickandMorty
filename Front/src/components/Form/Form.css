@@ -1,0 +1,22 @@
+
+.label{
+    color: white
+}
+
+.logInImg{
+    width:100%;
+    position: relative
+}
+
+.form{
+    position: absolute;
+    bottom: 30px;
+    left: 500px
+}
+
+.danger{
+    border: 1px solid red;
+    background-color: gray;
+    color: red;
+    font-weight: bolder;
+}

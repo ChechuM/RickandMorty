@@ -1,0 +1,61 @@
+.cardDiv {
+    background-color: #E8DACD;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 25px 25px 25px 25px;
+}
+
+.btnX {
+    position: absolute;
+    bottom: 280px;
+    left: 275px;
+    background-color: #B80000;
+    border: 0px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0px 0px 1px lightgray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnX:hover {
+    background-color: #4122F6;
+}
+
+.namePje {
+    /* width: 150px; */
+   background-color: #B9A988;
+   color: #477385;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 0px;
+   left: 10px;
+}
+
+.imgName {
+    position: relative;
+}
+
+.specie{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: -10px;    
+}
+
+.gender{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: -10px; 
+}
+
+.upperDiv{
+    display: grid;
+    justify-items: center;
+}

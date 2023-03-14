@@ -1,0 +1,18 @@
+/* .divCards{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+} */
+.cardDiv {
+   background-color: #E8DACD;
+   width: 300px;
+   border: 2px solid white;
+   border-radius: 10px;
+   display: inline-block;
+   overflow: hidden;
+   margin: 25px 25px 25px 25px;
+}
+.divCards{
+   display: flex;
+   max-width: 50px
+}
