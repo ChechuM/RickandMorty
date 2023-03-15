@@ -2,7 +2,7 @@ import './Form.css';
 import logImg from './../../images/loginimg.png';
 import validate from './Validation'
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 
 export default function LogIn(props) {

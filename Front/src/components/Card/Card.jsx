@@ -3,6 +3,7 @@ import './Card.css';
 import { addFavorite, deleteFavorite } from '../../redux/actions';
 import { useState, useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
 
 export default function Card({ name, gender, onClose, species, image, id }) {
    const dispatch = useDispatch();
@@ -13,10 +14,15 @@ export default function Card({ name, gender, onClose, species, image, id }) {
       if (isFav) {
          setisFav(false)
          dispatch(deleteFavorite(id))
+         // aquí tengo que poner el axios para enviar el método delete al localhost
+         // axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`); // conexión con el back 
+
       }
       if (!isFav) {
          setisFav(true)
          dispatch(addFavorite({ name, gender, onClose, species, image, id }))
+         // aquí tengo que poner el axios para enviar el método delete al localhost
+         // axios.post(`http://localhost:3001/rickandmorty/fav/${id}`); // conexión con el back 
       }
    }
 
@@ -26,7 +32,7 @@ export default function Card({ name, gender, onClose, species, image, id }) {
             setisFav(true);
          }
       });
-   }, [allCharacters]);
+   }, [allCharacters, id]);
 
    return (
       <div key={id} className='upperDiv'>

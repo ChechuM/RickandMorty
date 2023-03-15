@@ -5,7 +5,7 @@ export const DELETE_FAVORITE = 'DELETE_FAVORITE'
 export const FILTER_FAVORITE = 'FILTER_FAVORITE'
 export const ORDER_FAVORITES = 'ORDER_FAVORITES'
 
-let id = 0;
+// let id = 0;
 export const addFavorite = (char) => {
     return {
         type: ADD_FAVORITE,

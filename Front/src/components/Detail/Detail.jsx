@@ -17,15 +17,16 @@ export default function Detail() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://localhost:3001/rickandmorty/detail/${detailId}`)
+    fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
       .then((response) => response.json())
       .then((char) => {
+        console.log('Obteniendo detalles del origen' + char.origin)
         setCharacter({
           name: char.name,
           satus: char.status,
           species: char.species,
           gender: char.gender,
-          origin: char.origin.name,
+          // origin: char.origin.name,
           image: char.image
         })
       .catch((error)=>{
@@ -36,7 +37,7 @@ export default function Detail() {
 
   return (
     <div>
-      <img src={character.image} />
+      <img src={character.image} alt='imagen del personaje'/>
       <h1>Nombre: {character.name}</h1>
       <div>
         {character.status && <h5>Status: {character.status}</h5>}
